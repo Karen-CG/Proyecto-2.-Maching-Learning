@@ -43,7 +43,7 @@ Las etapa en las que se divide el procesamiento de los datos son:
 
 -Exploración de los datos: Se analiza la cantidad de valores faltantes, valores atipicos y si es necesario se normalizan los datos para su posterior procesamiento.
 
--Transformaciones de los datos: Se aplican lel escalado/normalización en caso necesario en columnas con datos de valor numperico; se aplicaca la codificación de variables categóricas.
+-Transformaciones de los datos: Se aplican el escalamiento o normalización de lso datos en caso necesario a las columnas con valor numperico; se aplicaca la codificación de variables categóricas.
 
 -Selección de atributos relevantes: Conforme se van analizando las columnas y se aplican las transformaciones necesarias se van identificando las columnas que aportan mayor inforación a nuestro modelo
 
