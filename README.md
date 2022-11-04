@@ -43,7 +43,7 @@ title - Título del anuncio.
 description - Descripción del anuncio.
 property_type - Tipo de propiedad (Casa, Departamento, PH).
 operation_type - Tipo de operación (Venta).
-geometry - Puntos geométricos formados por las coordenadas latitud y longitud.​
+geometry - Puntos geométricos formados por las coordenadas latitud y longitud.
 
 ### Obtención de datos
 Posterior al modelo obtneido de lso datos, se tienen como resultado un archivi
