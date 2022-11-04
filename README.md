@@ -39,7 +39,18 @@ Descripción de las columnas:
 * geometry - Puntos geométricos formados por las coordenadas latitud y longitud.
 
 ### Obtención de datos
-La primer parte del proceso es la explorción de los datos
+Las etapa en las que se divide el procesamiento de los datos son:
+
+-Exploración de los datos: Se analiza la cantidad de valores faltantes, valores atipicos y si es necesario se normalizan los datos para su posterior procesamiento.
+
+-Transformaciones de los datos: Se aplican lel escalado/normalización en caso necesario en columnas con datos de valor numperico; se aplicaca la codificación de variables categóricas.
+
+-Selección de atributos relevantes: Conforme se van analizando las columnas y se aplican las transformaciones necesarias se van identificando las columnas que aportan mayor inforación a nuestro modelo
+
+-Ingeniería de features: Si identificamos atributos que que puedan fucnionar como mejores predictores, se realiza una combinación de variables y se utiliza en el modelo
+
+- Modelo de Machine Learning: Este de identificara  de acuerdo a los datos que se tienen y los resultados que se esperan obtener. Con los cual se estableceran parámetros que mejoren las predicciones
+- 
 Posterior al modelo obtenido de los datos, se tienen como resultado un archivivo .csv con valores de '0' si es barata y '1' si es cara, calculados a partir de la media 
 de la columna price del archivo 'properties_colombia_train.csv'.
 
