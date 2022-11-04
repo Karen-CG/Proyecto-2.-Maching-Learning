@@ -9,6 +9,14 @@ Se cuenta con dos datasets:
 - 'properties_colombia_train.csv': Contiene 197549 registros y 26 dimensiones, el cual incluye la información numérica del precio.
 - 'propiedades_colombia_test.csv': Contiene 65850 registros y 25 dimensiones, el cual no incluye la información del precio.
 
+Descripción de las columnas:
+id - Identificador del aviso. No es único: si el aviso es actualizado por la inmobiliaria (nueva versión del aviso) se crea un nuevo registro con la misma id pero distintas fechas: de alta y de baja
+ad_type - Tipo de aviso (Propiedad, Desarrollo/Proyecto)
+start_date - Fecha de alta del aviso.
+start_date - Fecha de alta del aviso.
+end_date - Fecha de baja del aviso.
+
+
 Descripción de las dimensiones
 id - Identificador del aviso. No es único: si el aviso es actualizado por la inmobiliaria (nueva versión del aviso) se crea un nuevo registro con la misma id pero distintas fechas: de alta y de baja.
 ad_type - Tipo de aviso (Propiedad, Desarrollo/Proyecto).
