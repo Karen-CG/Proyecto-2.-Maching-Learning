@@ -55,7 +55,7 @@ Posterior al modelo obtenido de los datos, se tienen como resultado un archivivo
 de la columna price del archivo 'properties_colombia_train.csv'.
 
 
-#### Evaluaión de los modelos
+#### Evaluación de los modelos
 
 Como método de evaluación del desempeño del modelo, se utilizará la métrica de Exhaustividad (Recall) para las propiedades caras, a partir de la matriz de confusión (Confusion Matrix).Donde  son los verdaderos positivos y  los falsos negativos. Adicionalmente, se incluye la Accuracy como métrica de control. Que esta controladopor un dashbord en el cual se subiran los resultados obtenidos en formato .csv de dataset 'propiedades_colombia_test.csv'.
 
