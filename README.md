@@ -4,7 +4,10 @@ En los siguientes nootbooks se mostrara el proceso de la obtención de modelos d
 El objetivo de diseñar modelos de Machine Learning que predigan el precio, es debido a que no se cuenta con una certeza sobre el valor de estos en el mercado, en este caso de los bienes inmuebles, por lo cual se trata de identificar  las tendencias durante el tiempo y estimar  el valor de la una propiedad para encontrar oportunidades de compra o de venta.
 
 ### Información de los dataset proporcionados
+Se cuenta con dos datasets:
 
+- 'properties_colombia_train.csv': Contiene 197549 registros y 26 dimensiones, el cual incluye la información numérica del precio.
+- 'propiedades_colombia_test.csv': Contiene 65850 registros y 25 dimensiones, el cual no incluye la información del precio.
 
 Descripción de las dimensiones
 id - Identificador del aviso. No es único: si el aviso es actualizado por la inmobiliaria (nueva versión del aviso) se crea un nuevo registro con la misma id pero distintas fechas: de alta y de baja.
