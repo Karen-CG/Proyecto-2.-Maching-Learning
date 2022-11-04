@@ -1,4 +1,4 @@
-# Proyecto-2.-Maching-Learning
+# Proyecto-2.-Machine Learning
 
 En los siguientes nootbooks se mostrara el proceso de la obtención de modelos de Machine Learning para un dataset de inmuebles ubicados en Colombia donde se determinará el precio de la de propiedad a partir de otros datos otorgados que correspoden al año 2020.
 El objetivo de diseñar modelos de Machine Learning que predigan el precio, es debido a que no se cuenta con una certeza sobre el valor de estos en el mercado, en este caso de los bienes inmuebles, por lo cual se trata de identificar  las tendencias durante el tiempo y estimar  el valor de la una propiedad para encontrar oportunidades de compra o de venta.
