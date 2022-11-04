@@ -15,41 +15,40 @@ Descripción de las columnas:
 * start_date - Fecha de alta del aviso.
 * start_date - Fecha de alta del aviso.
 * end_date - Fecha de baja del aviso.
-
-
-Descripción de las dimensiones
-id - Identificador del aviso. No es único: si el aviso es actualizado por la inmobiliaria (nueva versión del aviso) se crea un nuevo registro con la misma id pero distintas fechas: de alta y de baja.
-ad_type - Tipo de aviso (Propiedad, Desarrollo/Proyecto).
-start_date - Fecha de alta del aviso.
-end_date - Fecha de baja del aviso.
-created_on - Fecha de alta de la primera versión del aviso.
-lat - Latitud.
-lon - Longitud.
-l1 - Nivel administrativo 1: país.
-l2 - Nivel administrativo 2: usualmente provincia.
-l3 - Nivel administrativo 3: usualmente ciudad.
-l4 - Nivel administrativo 4: usualmente barrio.
-l5 - Nivel administrativo 5.
-l6 - Nivel administrativo 6.
-rooms - Cantidad de ambientes.
-bedrooms - Cantidad de dormitorios (útil en el resto de los países).
-bathrooms - Cantidad de baños.
-surface_total - Superficie total en m².
-surface_covered - Superficie cubierta en m².
-price - Precio publicado en el anuncio.
-currency - Moneda del precio publicado.
-price_period - Periodo del precio (Diario, Semanal, Mensual)
-title - Título del anuncio.
-description - Descripción del anuncio.
-property_type - Tipo de propiedad (Casa, Departamento, PH).
-operation_type - Tipo de operación (Venta).
-geometry - Puntos geométricos formados por las coordenadas latitud y longitud.
+* created_on - Fecha de alta de la primera versión del aviso.
+* lat - Latitud.
+* lon - Longitud.
+* l1 - Nivel administrativo 1: país.
+* l2 - Nivel administrativo 2: usualmente provincia.
+* l3 - Nivel administrativo 3: usualmente ciudad.
+* l4 - Nivel administrativo 4: usualmente barrio.
+* l5 - Nivel administrativo 5.
+* l6 - Nivel administrativo 6.
+* rooms - Cantidad de ambientes.
+* bedrooms - Cantidad de dormitorios (útil en el resto de los países).
+* bathrooms - Cantidad de baños.
+* surface_total - Superficie total en m².
+* surface_covered - Superficie cubierta en m².
+* price - Precio publicado en el anuncio.
+* currency - Moneda del precio publicado.
+* price_period - Periodo del precio (Diario, Semanal, Mensual)
+* title - Título del anuncio.
+* description - Descripción del anuncio.
+* property_type - Tipo de propiedad (Casa, Departamento, PH).
+* operation_type - Tipo de operación (Venta).
+* geometry - Puntos geométricos formados por las coordenadas latitud y longitud.
 
 ### Obtención de datos
-Posterior al modelo obtneido de lso datos, se tienen como resultado un archivi
+La primer parte del proceso es la explorción de los datos
+Posterior al modelo obtenido de los datos, se tienen como resultado un archivivo .csv con valores de '0' si es barata y '1' si es cara, calculados a partir de la media 
+de la columna price del archivo 'properties_colombia_train.csv'.
+
 
 #### Evaluaión de los modelos
 
+Como método de evaluación del desempeño del modelo, se utilizará la métrica de Exhaustividad (Recall) para las propiedades caras, a partir de la matriz de confusión (Confusion Matrix).Donde  son los verdaderos positivos y  los falsos negativos. Adicionalmente, se incluye la Accuracy como métrica de control. Que esta controladopor un dashbord en el cual se subiran los resultados obtenidos en formato .csv de dataset 'propiedades_colombia_test.csv'.
 
+###### Lenguaje utilizado: Python
+####### Librerias: pandas, matplotlib, numpy, seaborn, missingno, sklearn
 
 
